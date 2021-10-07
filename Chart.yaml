@@ -1,6 +1,6 @@
 apiVersion: v2
 name: web-chart
-description: A Helm chart for Kubernetes
+description: This is a Helm v3 chart which can be deployed on any K8s machine
 
 # A chart can be either an 'application' or a 'library' chart.
 #
