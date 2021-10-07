@@ -5,15 +5,15 @@
 replicaCount: 1
 
 image:
-  repository: securityunion/nextjs-demo
-  pullPolicy: Always
-  tag: ""
+  repository: securityunion/nextjs-demo ##this is a test docker image we are pulling from docker hub
+  pullPolicy: Always ## means that it will always check for the new version on each restart
+  tag: "" ## tag information will be taken from Charts.yaml => appVersion field.
 
 nameOverride: ""
 fullnameOverride: ""
 
-service:
-  type: NodePort
+service:         # defining node to expose service to outside world
+  type: NodePort 
   port: 4444
 
 ingress:
